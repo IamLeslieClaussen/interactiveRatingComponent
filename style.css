@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 *,
 *::before,
@@ -34,17 +36,106 @@ h6 {
 
 
 :root {
-    --ff-sans: 'Poppins', sans-serif;
+    --ff-sans: 'Overpass', sans-serif;
 /* font size*/
-    --fs: 0.9275rem
+    --fs: 0.9375rem
 /* font weight */
-    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-heavy: 700;
 /* colour */
 /***************Primary**************/
 --clr-prmy-orange: hsl(22, 89%, 52%);
 /***************Neutral**************/
-    --clr-ntrl-900: hsl(234, 12%, 34%);
+
+    --clr-ntrl-white: hsl(0, 0%, 100%);
+    --clr-ntrl-light-grey: hsl(217, 12%, 63%);
+    --clr-ntrl-dark-blue: hsl(213, 19%, 18%);
+    --clr-ntrl-very-dark-blue:  hsl(216, 12%, 8%);
 }
 
-@media (min-width: 768px){}
-@media (min-width: 1440px){}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    font-family: var(--ff-sans);
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 327px;
+    height: 360px;
+    border: 1px white solid;
+    border-radius: 15px;
+    background-color: var(--clr-ntrl-very-dark-blue);
+    padding: 24px;
+}
+
+.container__star {
+    padding: 13.33px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--clr-ntrl-dark-blue);
+    border-radius: 50px;
+    margin-bottom: 16px;
+
+    .star {
+        width: 13.96px;
+        height: 13.33px;
+    }
+}
+
+h1 {
+    color: var(--clr-ntrl-white);
+    font-size: 2rem;
+    margin-bottom: 17px;
+} 
+
+p {
+ font-size: 14px;
+ color: var(--clr-ntrl-light-grey);
+ line-height: 22px;
+}
+
+.rating-content {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    background-color: var(--clr-ntrl-dark-blue);
+    border: none;
+    color: var(--clr-ntrl-light-grey);
+    margin-block: 24px;
+}
+
+input {
+    background-color: var(--clr-prmy-orange);
+    width: 279px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: none;
+    letter-spacing: 1.87px;
+    font-weight: var(--fw-heavy);
+    font-size: 14px;
+
+}
+
+
+@media (min-width: 1440px){
+    .container {
+        width: 412px;
+        height: 416px;
+        border-radius: 30px;
+    }
+}
