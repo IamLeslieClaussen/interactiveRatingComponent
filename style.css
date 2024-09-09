@@ -1,0 +1,50 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+:root {
+    --ff-sans: 'Poppins', sans-serif;
+/* font size*/
+    --fs: 0.9275rem
+/* font weight */
+    --fw-light: 200;
+/* colour */
+/***************Primary**************/
+--clr-prmy-orange: hsl(22, 89%, 52%);
+/***************Neutral**************/
+    --clr-ntrl-900: hsl(234, 12%, 34%);
+}
+
+@media (min-width: 768px){}
+@media (min-width: 1440px){}
