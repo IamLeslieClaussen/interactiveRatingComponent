@@ -128,6 +128,11 @@ p {
     color: white;
 }
 
+.rating-btn.active {
+    background-color: white;
+    color: var(--clr-prmy-orange);
+}
+
 input {
     background-color: var(--clr-prmy-orange);
     width: 279px;
