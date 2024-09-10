@@ -69,7 +69,7 @@ li {
     list-style-type: none;
 }
 
-.container {
+#rating-component {
     width: 327px;
     height: 360px;
     border: none
@@ -110,7 +110,7 @@ p {
     justify-content: space-between;
 }
 
-.btn {
+.rating-btn{
     height: 42px;
     width: 42px;
     border-radius: 50px;
@@ -123,7 +123,7 @@ p {
     cursor: pointer;
 }
 
-.btn:hover {
+.rating-btn:hover {
     background-color: grey;
     color: white;
 }
@@ -154,8 +154,10 @@ input:hover{
     border-radius: 13px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 24px;
     align-items: center;
+    display: none;
 }
 
 .thank-you-image img {
